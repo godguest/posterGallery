@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>海报画廊</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="stage">
+    <section class="wrap" id="wrap">
+      <figure class="photo front" id="photo{{index}}" onclick="act({{index}});">
+        <img src="images/{{img}}.jpg" alt="{{alt}}">
+        <figcaption class="caption">
+          <h2 class="title">{{title}}</h2>
+          <div class="desc">
+            {{desc}}
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+    <nav class="ctrl" id="ctrl">
+      <span class="icon front" id="icon{{index}}" onclick="act({{index}});"></span>
+    </nav>
+  </div>
+  <footer>图片及数据来自 <a href="http://www.mtime.com/top/movie/top100/" target="_blank">时光网</a></footer>
+  <script src="data/data.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
